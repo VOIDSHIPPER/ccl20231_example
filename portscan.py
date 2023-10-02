@@ -22,7 +22,7 @@ def main():
     open_ports = scan_ports(target_ip, start_port, end_port)
 
     if open_ports:
-        print("Open ports on {}: {}".format(target_ip, ", ".join(map(str, open_ports)))
+        print("Open ports on {}: {}".format(target_ip, ", ".join(map(str, open_ports))))
     else:
         print("No open ports found on {} in the specified range.".format(target_ip))
 
